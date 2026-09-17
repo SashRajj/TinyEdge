@@ -1,0 +1,43 @@
+{
+  "keras_fp32": {
+    "accuracy": 0.8813,
+    "size_kib": 3497.0859375,
+    "latency": null
+  },
+  "fp32": {
+    "accuracy": 0.8813,
+    "size_kib": 1132.4296875,
+    "latency": {
+      "mean_ms": 1.1653783457586542,
+      "p50_ms": 1.1476250074338168,
+      "p95_ms": 1.2491319139371626
+    },
+    "size_reduction_vs_fp32_pct": 0.0,
+    "accuracy_drop_vs_fp32_pp": 0.0,
+    "speedup_vs_fp32": 1.0
+  },
+  "dynamic": {
+    "accuracy": 0.881,
+    "size_kib": 296.84375,
+    "latency": {
+      "mean_ms": 0.27730784451705404,
+      "p50_ms": 0.2851669996744022,
+      "p95_ms": 0.2879579842556268
+    },
+    "size_reduction_vs_fp32_pct": 73.78700388407117,
+    "accuracy_drop_vs_fp32_pp": 0.029999999999996696,
+    "speedup_vs_fp32": 4.202471617015454
+  },
+  "int8": {
+    "accuracy": 0.8813,
+    "size_kib": 300.6171875,
+    "latency": {
+      "mean_ms": 0.24639960975036956,
+      "p50_ms": 0.24537500576116145,
+      "p95_ms": 0.2601731976028532
+    },
+    "size_reduction_vs_fp32_pct": 73.45378783175003,
+    "accuracy_drop_vs_fp32_pp": 0.0,
+    "speedup_vs_fp32": 4.729627400543828
+  }
+}
