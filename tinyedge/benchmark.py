@@ -84,7 +84,8 @@ def main():
 
     results = {}
     keras_model = tf.keras.models.load_model(args.keras_model)
-    keras_acc = keras_model.evaluate(x_test, y_test, verbose=0)[1]
+    keras_preds = keras_model.predict(x_test, verbose=0).argmax(axis=1)
+    keras_acc = float((keras_preds == y_test).mean())
     results["keras_fp32"] = {
         "accuracy": float(keras_acc),
         "size_kib": os.path.getsize(args.keras_model) / 1024,

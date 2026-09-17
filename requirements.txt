@@ -1,2 +1,6 @@
 tensorflow>=2.19
 numpy>=1.26
+
+# Only needed by tinyedge.fetch_data (mirror download of CIFAR-10)
+pyarrow>=15.0
+pillow>=10.0
